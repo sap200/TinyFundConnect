@@ -1,0 +1,28 @@
+package errors
+
+const (
+	BAD_REQUEST_STATUS_CODE_SIGNUP = "TFC001"
+	INVALID_EMAIL_FORMAT           = "SIGNUP_ERROR:: Email format is invalid"
+	EMAIL_ALREADY_EXISTS_IN_DB     = "SIGNUP_ERROR:: Email already exists in our db"
+	FAILURE_CONSTANT               = "FAILURE"
+	EMAIL_VERIFICATION_ERROR_CODE  = "TFC002"
+	PANGEA_CHECK_EMAIL_BREACHED    = "SIGNUP_ERROR:: The email you entered is in breached list"
+	PANGEA_CHECK_IP_SANCTIONED     = "SIGNUP_FORM:: The Ip you entered is in sanction country list"
+	PANGEA_CHECK_IP_INTEL          = "SIGNUP_FORM:: The Ip you entered is either malicious, vpn, or proxy"
+	INVALID_PASSWORD_FORMAT        = "SIGNUP_ERROR:: Password must contain at least 1 special character, 1 digit, 1 uppercase and it should be greater than 8 digit"
+	EMAIL_ALREADY_VERIFIED         = "EM000"
+	EMAIL_AREADY_VERIFIED_MESSAGE  = "Email:: Email already verified"
+	LOGIN_FAILURE_CODE             = "LOGIN001"
+	LOGOUT_FAILURE_CODE            = "LOGOUT001"
+	UNAUTHORIZED                   = "unauthorized"
+	POOL_FAILURE_CODE              = "POOL001"
+	POOL_SUCCESS_CODE              = "POOL000"
+	POOL_CREATION_SUCCESS_MESSAGE  = "pool created successfully"
+	PAYMENT_SUCCESS_CODE           = "PAYMENT000"
+	PAYMENT_FAILURE_CODE           = "PAYMENT001"
+	CHAT_ERROR_CODE                = "CHAT001"
+	CHAT_SUCCESS_CODE              = "CHAT000"
+	POLL_ERROR_CODE                = "POLL001"
+	POLL_SUCCESS_CODE              = "POLL000"
+	TRADE_FAILURE_CODE             = "TRADE001"
+)
