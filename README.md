@@ -1,1 +1,1 @@
-"# TinyFundConnect" 
+# TinyFundConnect
