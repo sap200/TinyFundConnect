@@ -238,6 +238,26 @@ func PoolAddMemberHandler(c *gin.Context) {
 
 	// fetch the pool record from db
 	repo := db.New()
+
+	// check if user exists in our db
+	usExists, err := repo.DoesRecordExists(secret.USER_COLLECTIONS, pool.OneMember.Email)
+	if err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{
+			"code":    e.POOL_FAILURE_CODE,
+			"message": err.Error(),
+		})
+		return
+
+	}
+
+	if !usExists {
+		c.JSON(http.StatusBadRequest, gin.H{
+			"code":    e.POOL_FAILURE_CODE,
+			"message": "User Doesnt exists in our record",
+		})
+		return
+	}
+
 	ok, err := repo.DoesRecordExists(secret.POOL_COLLECTION, poolId)
 	fmt.Println(ok, err)
 	if err != nil {
