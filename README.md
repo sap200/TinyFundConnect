@@ -3,6 +3,9 @@
 # TinyFundConnect
 In today’s financial landscape, several critical issues hold back potential investors, limiting their access to the cryptocurrency market. Limited financial resources, Information asymmetry and Lack of Solution are few factors. Tiny Fund connect fills this market void and brings to you the next generation Peer to peer Micro investing application, where users can form pools, join pools, pool in their financial resources, trade cryptocurrency and share profit collectively.
 
+# Try it out
+[try it out here](http://172.232.132.251/)
+
 # Installation
 
 - Download and Install golang https://go.dev/doc/install
